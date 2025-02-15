@@ -1,5 +1,12 @@
+# جعل Dart هي اللغة الأساسية
 *.dart linguist-detectable=true
+
+# إخفاء ملفات CMake و C++
+*.cmake linguist-detectable=false
 *.cpp linguist-detectable=false
 *.h linguist-detectable=false
-*.cmake linguist-detectable=false
+*.c linguist-detectable=false
 
+# تقليل تأثير Swift و HTML على نسبة الحساب
+*.swift linguist-detectable=false
+*.html linguist-detectable=false
