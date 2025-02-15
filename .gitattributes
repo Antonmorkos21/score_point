@@ -1,12 +1,18 @@
-# جعل Dart هي اللغة الأساسية
+# جعل Dart اللغة الأساسية
 *.dart linguist-detectable=true
 
-# إخفاء ملفات CMake و C++
+# إخفاء لغات أخرى مثل CMake و C++
 *.cmake linguist-detectable=false
 *.cpp linguist-detectable=false
 *.h linguist-detectable=false
 *.c linguist-detectable=false
-
-# تقليل تأثير Swift و HTML على نسبة الحساب
 *.swift linguist-detectable=false
 *.html linguist-detectable=false
+
+# التأكد من عدم احتساب ملفات Flutter المُولّدة تلقائيًا
+android/** linguist-vendored
+ios/** linguist-vendored
+linux/** linguist-vendored
+macos/** linguist-vendored
+windows/** linguist-vendored
+web/** linguist-vendored
